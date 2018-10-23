@@ -1,0 +1,18 @@
+<!doctype html>
+{% load staticfiles %} <!-- indicates to django that staticfiles will be loaded into this page -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href={% static "css/style.css" %}>
+
+    <title>My First HTML5 Template</title>
+</head>
+
+<body>
+    <h1>Hello! This is index.html! I'm in templates/first_app!</h1>
+    {{insert_me}} <!-- watch the magic happen -->
+    <div>
+        <img src={% static "images/example.jpg" %} alt="Uh Oh, din't show!"> <!-- some more magic -->
+    </div>
+</body>
+</html>
